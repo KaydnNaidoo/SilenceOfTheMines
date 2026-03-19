@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find 'D:\\\\Unreal Projects\\\\SilenceOfTheMines' -type f \\\\\\(-name *Character* -o -name *Dodge* -o -name *dodge* -o -name *IA_Dodge* \\\\\\))",
+      "Bash(find 'D:\\\\Unreal Projects\\\\SilenceOfTheMines/Source' -type f \\\\\\(-name *.cpp -o -name *.h \\\\\\))",
+      "Bash(find 'D:\\\\Unreal Projects\\\\SilenceOfTheMines/Content' -type f -name *.json -path *Aura* -exec grep -l \"dodge\\\\|Dodge\" {})",
+      "Bash(2)",
+      "Bash(grep -l \"dodge\\\\|Dodge\" D:Unreal ProjectsSilenceOfTheMines/Saved/.Aura/indexed_files_aura/*.json)",
+      "Bash(grep -l \"IA_Dodge\\\\|Dodge\" D:Unreal ProjectsSilenceOfTheMines/Saved/.Aura/indexed_files_aura/*.json)",
+      "Bash(find 'D:\\\\Unreal Projects\\\\SilenceOfTheMines/Saved/.Aura/indexed_files_aura' -name *.json -type f -exec grep -l \"dodge\\\\|Dodge\" {})",
+      "Bash(xargs -I {} cat {})",
+      "mcp__unreal-editor__read_asset",
+      "mcp__unreal-editor__edit_blueprint",
+      "mcp__unreal-editor__edit_graph",
+      "mcp__unreal-editor__configure_asset",
+      "mcp__unreal-editor__edit_animation_asset"
+    ]
+  }
+}
